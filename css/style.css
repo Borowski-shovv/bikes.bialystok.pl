@@ -89,6 +89,7 @@ body {
   font-family: arial, helvetica;
   color: #333;
   color: rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', sans-serif;
 }
 .wrap {
   margin-left: auto;
@@ -122,11 +123,11 @@ p {
 #menu li.active {
   /*background: #666;*/
   /*background: rgba(0, 0, 0, 0.5);*/
-  color: #fff;
+  /* color: #fff; */
 }
 #menu li a {
   text-decoration: none;
-  color: #000;
+  color: white;
 }
 #menu li.active a:hover {
 }
@@ -137,20 +138,22 @@ p {
 #menu li.active a {
   padding: 9px 18px;
   display: block;
+  font-size: 22px;
 }
 #menu li.active a {
   color: #fff;
-  border-bottom: 5px dotted;
+  border-bottom: 2px solid white;
 }
 #menu {
   position: fixed;
   top: 0;
-  left: 0;
-  height: 40px;
+  right: 0;
+  height: 70px;
   z-index: 70;
   width: 100%;
   padding: 0;
   margin: 0;
+  text-align: right;
 }
 .twitter-share-button {
   position: fixed;
@@ -288,5 +291,14 @@ p {
 }
 
 .attached {
-  background: red;
+  background: #20123a;
+}
+
+.s1 {
+  background: linear-gradient(
+    90deg,
+    rgba(116, 55, 201, 1) 0%,
+    rgba(46, 160, 223, 1) 35%,
+    rgba(82, 253, 188, 1) 100%
+  );
 }
