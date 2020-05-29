@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Wypozyczalnia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Alvaro Trigo Lopez" />
     <meta
       name="description"
@@ -18,8 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
   </head>
   <body>
     <button class="hamburger">
@@ -27,7 +28,8 @@
         <span class="hamburger-inner"></span>
       </span>
     </button>
-    <ul id="menu">
+
+    <ul id="menu" class="navigation">
       <li data-menuanchor="firstPage" class="active">
         <a href="#firstPage">Start</a>
       </li>
@@ -40,9 +42,9 @@
 
     <div id="fullpage">
       <div class="section s1" id="section0">
-        <!-- <div class="photo-wrapper">
+        <div class="photo-wrapper">
           <img src="images/Path 4.svg" alt="" />
-        </div> -->
+        </div>
         <div class="container">
           <div class="row start-wrapper">
             <div class="col-md-6 col-xs-12">
@@ -56,22 +58,24 @@
                 <span>motocykli i rowerów</span>
               </h1>
               <div class="start-bar"></div>
-              <p>
-                Jeżeli marzysz o przejażdżce sportowym motocyklem lub rowerem do
-                freeride'u teraz masz taką możliwość! W naszym garażu czekają na
-                Ciebie dwa motocykle i dwa rowery.
-              </p>
-              <p>
-                <span>
-                  Interesuje Cię motocross, ale nie wiesz czy to jest dla
-                  Ciebie?
-                </span>
-                <span>
-                  Wypożycz nasz motocykl i się przekonaj!
-                </span>
-              </p>
-              <button class="start-btn prices-btn">Zobacz cennik</button>
-              <button class="start-btn contact-btn">Kontakt</button>
+              <div class="text">
+                <p>
+                  Jeżeli marzysz o przejażdżce sportowym motocyklem lub rowerem
+                  do freeride'u teraz masz taką możliwość! W naszym garażu
+                  czekają na Ciebie dwa motocykle i dwa rowery.
+                </p>
+                <p>
+                  <span>
+                    Interesuje Cię motocross, ale nie wiesz czy to jest dla
+                    Ciebie?
+                  </span>
+                  <span>
+                    Wypożycz nasz motocykl i się przekonaj!
+                  </span>
+                </p>
+                <button class="start-btn prices-btn">Zobacz cennik</button>
+                <button class="start-btn contact-btn">Kontakt</button>
+              </div>
             </div>
           </div>
         </div>
