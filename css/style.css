@@ -72,7 +72,7 @@ h6 {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  color: #444;
+  /* color: #444; */
 }
 q:before,
 q:after {
@@ -86,32 +86,19 @@ acronym {
 /* Custom CSS
  * --------------------------------------- */
 body {
-  font-family: arial, helvetica;
-  color: #333;
-  color: rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
-.wrap {
+/* .wrap {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   position: relative;
-}
+} */
 h1 {
-  font-size: 6em;
+  font-size: 3.5em;
 }
-p {
-  font-size: 2em;
-}
-.intro p {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 1.5em;
-}
-.section {
-  text-align: center;
-}
+
 #menu li {
   display: inline-block;
   margin: 10px;
@@ -149,7 +136,6 @@ p {
 }
 #menu li.active a {
   color: #fff;
-  /* border-bottom: 2px solid white; */
 }
 
 #menu li.active a:after {
@@ -178,82 +164,15 @@ p {
   margin: 0;
   text-align: right;
 }
-.twitter-share-button {
-  position: fixed;
-  z-index: 99;
-  right: 149px;
-  top: 9px;
-}
 
-#infoMenu {
-  height: 20px;
-  color: #f2f2f2;
-  position: fixed;
-  z-index: 70;
-  bottom: 0;
-  width: 100%;
-  text-align: right;
-  font-size: 0.9em;
-  padding: 8px 0 8px 0;
-}
-#infoMenu ul {
-  padding: 0 40px;
-}
-#infoMenu li a {
-  display: block;
-  margin: 0 22px 0 0;
-  color: #333;
-}
-#infoMenu li a:hover {
-  text-decoration: underline;
-}
-#infoMenu li {
-  display: inline-block;
-  position: relative;
-}
-#examplesList {
-  display: none;
-  background: #282828;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 20px;
-  float: left;
-  position: absolute;
-  bottom: 29px;
-  right: 0;
-  width: 638px;
-  text-align: left;
-}
-#examplesList ul {
-  padding: 0;
-}
-#examplesList ul li {
-  display: block;
-  margin: 5px 0;
-}
-#examplesList ul li a {
-  color: #bdbdbd;
-  margin: 0;
-}
-#examplesList ul li a:hover {
-  color: #f2f2f2;
-}
-#examplesList .column {
-  float: left;
-  margin: 0 20px 0 0;
-}
-#examplesList h3 {
-  color: #f2f2f2;
-  font-size: 1.2em;
-  margin: 0 0 15px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  padding: 0 0 5px 0;
-}
-
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
 .attached {
   background: #20123a;
   transition: all 0.3s ease-in-out;
@@ -267,6 +186,71 @@ p {
     rgba(46, 160, 223, 1) 35%,
     rgba(82, 253, 188, 1) 100%
   );
+}
+
+.start-wrapper {
+  margin-bottom: 200px;
+}
+
+/* PHOTO */
+.r1-wrapper img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width: 100%;
+  height: auto; */
+}
+
+.content h1 {
+  margin-top: 40px;
+  text-align: right;
+  color: #fff;
+  font-weight: 300;
+}
+
+/*  */
+.start-bar {
+  right: 0;
+  display: block;
+  border: 2px solid white;
+  width: 100px;
+  max-height: 2px;
+  margin: 30px 0 30px auto;
+}
+
+.content p {
+  margin: 30px auto;
+  text-align: right;
+  color: white;
+  font-weight: 500;
+}
+
+.content p span {
+  display: block;
+}
+
+.start-btn {
+  border: none;
+  width: 228px;
+  height: 43px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.prices-btn {
+  background: #3739ac;
+  z-index: 99999;
+}
+
+.contact-btn {
+  background: #7437c9;
+  z-index: 99999;
+  margin-left: 80px;
 }
 
 /* SEKCJA 2 */
