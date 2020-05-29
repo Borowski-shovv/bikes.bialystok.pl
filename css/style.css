@@ -90,6 +90,7 @@ body {
   color: #333;
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 .wrap {
   margin-left: auto;
@@ -264,7 +265,7 @@ p {
 
 .attached {
   background: #20123a;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 .s1 {
@@ -276,6 +277,22 @@ p {
   );
 }
 
+.s2 {
+  position: relative;
+}
+
+.s2::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: top left;
+  transform: skewY(-3deg);
+}
+
 .s3 {
   background: linear-gradient(
     0deg,
@@ -285,8 +302,41 @@ p {
   );
 }
 
+.s3::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(203, 203, 203, 1) 0%,
+    rgba(179, 179, 179, 1) 38%,
+    rgba(125, 129, 127, 1) 88%
+  );
+  transform-origin: top left;
+  transform: skewY(-3deg);
+}
+
 #fp-nav ul li a span {
   background: white !important;
+}
+
+.s4 {
+  background-color: lightseagreen;
+}
+
+.s4::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: lightseagreen;
+  transform-origin: top left;
+  transform: skewY(-3deg);
 }
 
 .hamburger {
@@ -364,7 +414,7 @@ p {
     right: 0;
     transform: translateX(100%);
     transition: transform 0.3s 0.1s ease-in-out;
-    /* background-color: transparent; */
+    background-color: transparent;
   }
 
   .navigation--active {
