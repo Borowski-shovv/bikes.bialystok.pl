@@ -21,7 +21,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <ul id="menu">
+    <button class="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <ul id="menu" class="navigation">
       <li data-menuanchor="firstPage" class="active">
         <a href="#firstPage">Start</a>
       </li>
@@ -52,6 +57,7 @@
         navigationPosition: 'right',
         navigationTooltips: ['Start', 'Oferta', 'Cennik', 'Kontakt'],
         menu: '#menu',
+        responsiveWidth: 1100,
         onLeave: function (origin, destination, direction) {
           var loadedSection = this;
           if (origin.index == 0) {
@@ -64,5 +70,6 @@
         },
       });
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
