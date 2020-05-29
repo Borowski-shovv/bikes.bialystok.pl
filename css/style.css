@@ -254,20 +254,12 @@ p {
   padding: 0 0 5px 0;
 }
 
-/* Demos Menu
- * --------------------------------------- */
-#demosMenu {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
 .attached {
   background: #20123a;
   transition: all 0.3s ease-in-out;
 }
 
+/* SEKCJA 1 */
 .s1 {
   background: linear-gradient(
     90deg,
@@ -277,6 +269,7 @@ p {
   );
 }
 
+/* SEKCJA 2 */
 .s2 {
   position: relative;
 }
