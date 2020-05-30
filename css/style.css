@@ -181,7 +181,7 @@ h1 {
 
 .section {
   min-height: 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 /* SEKCJA 1 */
 .s1 {
@@ -429,6 +429,128 @@ h3.name {
   transform: skewY(-3deg);
   z-index: -1;
 }
+
+.priceheader {
+  margin: 0 auto;
+}
+
+.price-title {
+  font-size: 56px;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  margin: 70px auto 0;
+  text-align: center;
+  color: white;
+}
+
+.price-bar {
+  display: block;
+  border: 2px solid white;
+  width: 100%;
+  max-height: 2px;
+  margin: 30px auto;
+}
+
+.art-law {
+  transform: skew(0deg, -2deg) translateY(-10px);
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.table-wrapper {
+  width: 100%;
+}
+
+.table {
+  background-color: white;
+}
+
+.table td {
+  padding: 0.55rem;
+}
+
+.table2 {
+  padding-bottom: 100px !important;
+}
+
+.table2 td {
+  width: 55%;
+  text-align: left;
+}
+
+.motorbike {
+  top: 47%;
+  right: 7%;
+  position: absolute;
+}
+
+.motorbike img {
+  width: 100%;
+  height: auto;
+}
+
+.dirt {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.dirt img {
+  height: auto;
+  width: 100%;
+}
+
+.mobile-tables {
+  display: none;
+}
+@media (max-width: 576px) {
+  .mobile-tables {
+    display: table;
+    width: 100%;
+    text-transform: uppercase;
+    border-collapse: collapse;
+  }
+
+  .mobile-tables th {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .mobile-tables td {
+    padding: 10px;
+  }
+
+  .mobile-tables:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  .table1screen,
+  .table2 {
+    display: none;
+  }
+  .art-law {
+    position: absolute;
+    display: block;
+    bottom: 0%;
+  }
+
+  .motorbike {
+    display: none;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 #fp-nav ul li a span {
   background: white !important;
