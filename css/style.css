@@ -163,6 +163,7 @@ h1 {
   padding: 0;
   margin: 0;
   text-align: right;
+  padding-right: 350px;
 }
 
 /* ---------------------------------------------------- */
@@ -180,6 +181,7 @@ h1 {
 
 .section {
   min-height: 100%;
+  text-align: center;
 }
 /* SEKCJA 1 */
 .s1 {
@@ -197,7 +199,6 @@ h1 {
   position: absolute;
   top: -10%;
   left: -10%;
-  display: none;
 }
 
 /* PHOTO */
@@ -251,6 +252,11 @@ h1 {
   text-transform: uppercase;
 }
 
+.start-btn a {
+  color: white;
+  text-decoration: none;
+}
+
 .prices-btn {
   background: #3739ac;
   z-index: 99999;
@@ -265,6 +271,10 @@ h1 {
 @media (max-width: 768px) {
   body {
     overflow-x: hidden !important;
+  }
+
+  .photo-wrapper img {
+    display: none;
   }
 
   .r1-wrapper {
@@ -319,6 +329,7 @@ h1 {
 /* SEKCJA 2 */
 .s2 {
   position: relative;
+  z-index: 3;
 }
 
 .s2::before {
@@ -331,6 +342,7 @@ h1 {
   background-color: white;
   transform-origin: top left;
   transform: skewY(-3deg);
+  z-index: -1;
 }
 
 .s3 {
@@ -340,7 +352,65 @@ h1 {
     rgba(179, 179, 179, 1) 38%,
     rgba(125, 129, 127, 1) 88%
   );
+  z-index: 3;
 }
+
+.offer-header {
+  display: block;
+  width: 100%;
+}
+
+.offer-title {
+  font-size: 56px;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  margin: 75px auto 0;
+  text-align: center;
+}
+.offer-bar {
+  display: block;
+  border: 2px solid black;
+  width: 100px;
+  height: 2px;
+  margin: 30px auto;
+}
+
+h3.name {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 19px;
+}
+
+.spec span {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  .offer-title {
+    margin-top: 50px;
+  }
+
+  .option1,
+  .option2,
+  .option3 {
+    margin: auto;
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .option1 img,
+  .option2 img,
+  .option3 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* SECTION 3 */
 
 .s3::before {
   position: absolute;
@@ -357,6 +427,7 @@ h1 {
   );
   transform-origin: top left;
   transform: skewY(-3deg);
+  z-index: -1;
 }
 
 #fp-nav ul li a span {
@@ -365,6 +436,7 @@ h1 {
 
 .s4 {
   background-color: lightseagreen;
+  z-index: 3;
 }
 
 .s4::before {
@@ -377,6 +449,7 @@ h1 {
   background-color: lightseagreen;
   transform-origin: top left;
   transform: skewY(-3deg);
+  z-index: -1;
 }
 
 .hamburger {
@@ -458,12 +531,23 @@ h1 {
     background-color: transparent;
     z-index: 9999999;
     background-color: gray;
+    padding-right: 0;
   }
 
   .navigation--active {
     transform: translateX(0px) !important;
-    overflow: hidden;
   }
+
+  /* @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+  } */
 
   #menu li {
     width: 100%;
