@@ -748,10 +748,11 @@ footer {
     overflow-x: hidden;
   }
 
-  /* .menu-wrapper {
-    height: 50%;
+  .menu-wrapper {
+    overflow-x: hidden;
     position: absolute;
-  } */
+    height: 50%;
+  }
 
   .hamburger {
     display: inline-block;
