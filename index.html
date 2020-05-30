@@ -23,14 +23,14 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
   </head>
   <body>
-    <div class="container">
-      <button class="hamburger">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <div class="row">
-        <div class="menu-wrapper">
+    <div class="menu-wrapper" id="menu-wrapper">
+      <div class="container">
+        <button class="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="row">
           <ul id="menu" class="navigation">
             <li data-menuanchor="start" class="active">
               <a href="#start">Start</a>
@@ -415,7 +415,39 @@
         </div>
       </div>
       <div class="section s4" id="section3">
-        <h1>Kontakt</h1>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d153217.85595759974!2d23.156066!3d53.127625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2sBia%C5%82ystok!5e0!3m2!1spl!2spl!4v1590475862982!5m2!1spl!2spl"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+            pointer-events="none"
+          ></iframe>
+        </div>
+        <div class="contact-box">
+          <h1 class="contact-title">Kontakt</h1>
+          <div class="contact-bar"></div>
+          <p>+48 663 342 150</p>
+          <p>wypozyczalnia@bikes.bialystok.pl</p>
+        </div>
+        <footer class="footer">
+          <div class="manufacturer">
+            <p>Copyright 2020 - bikes.bialystok.pl |</p>
+            <p>WDROŻENIE:</p>
+            <a
+              href="https://shovv.pl"
+              target="_blank"
+              title="Fotografia reklamowa i strony internetowe Białystok"
+              ><img
+                src="https://wod-kan.co/wp-content/uploads/2020/03/made-by-shovv.png"
+                alt="SHOVV - Fotografia"
+            /></a>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>

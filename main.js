@@ -21,11 +21,11 @@ var myFullpage = new fullpage('#fullpage', {
   onLeave: function (origin, destination, direction) {
     var loadedSection = this;
     if (origin.index == 0) {
-      $('#menu').addClass('attached');
+      $('#menu-wrapper').addClass('attached');
     }
 
     if (destination.index == 0) {
-      $('#menu').removeClass('attached');
+      $('#menu-wrapper').removeClass('attached');
     }
 
     // const section = destination.item;
