@@ -72,7 +72,6 @@ h6 {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  /* color: #444; */
 }
 q:before,
 q:after {
@@ -86,7 +85,7 @@ acronym {
 /* Custom CSS
  * --------------------------------------- */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
   /* position: relative; */
 }
@@ -104,19 +103,10 @@ h1 {
   display: inline-block;
   margin: 0 10px;
   color: #000;
-  /*background: #fff;*/
-  /*background: rgba(255, 255, 255, 0.5);*/
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
 }
-
-/* #menu li:last-of-type {
-  margin-right: 400px;
-} */
-/* #menu li.active { */
-/*background: #666;*/
-/*background: rgba(0, 0, 0, 0.5);*/
-/* color: #fff; */
 
 #menu li a {
   text-decoration: none;
@@ -131,7 +121,7 @@ h1 {
 #menu li.active a {
   padding: 9px 18px;
   display: block;
-  font-size: 22px;
+  font-size: 26px;
   position: relative;
   letter-spacing: 1px;
 }
@@ -144,7 +134,7 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 15%;
+  bottom: 5%;
   width: 90%;
   height: 4px;
   background: linear-gradient(
@@ -165,12 +155,7 @@ h1 {
 
 /* ---------------------------------------------------- */
 /* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
+
 .attached {
   background: #20123a;
   transition: all 0.3s ease-in-out;
@@ -212,8 +197,6 @@ h1 {
   position: absolute;
   right: 0;
   top: 0;
-  /* width: 100%;
-  height: auto; */
 }
 
 .content h1 {
@@ -234,10 +217,11 @@ h1 {
 }
 
 .content p {
-  margin: 50px auto;
+  margin: 35px auto;
   text-align: right;
   color: white;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .content p span {
@@ -278,13 +262,17 @@ h1 {
     overflow-x: hidden !important;
   }
 
-  .photo-wrapper img {
-    display: none;
+  .photo-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
   }
 
   .r1-wrapper {
     position: relative;
-    top: 50%;
+    top: 60%;
     height: 300px;
   }
 
@@ -324,6 +312,10 @@ h1 {
 
   .content p {
     text-align: center;
+  }
+
+  .text {
+    margin: 70px 0 0 0;
   }
 
   .start-btn {
@@ -382,9 +374,11 @@ h1 {
 }
 
 h3.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   margin: 20px auto;
   text-align: center;
-  font-size: 19px;
+  font-size: 28px;
 }
 
 .spec span {
@@ -392,9 +386,10 @@ h3.name {
   font-size: 15px;
   line-height: 25px;
   font-weight: 300;
+  margin: 5px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1090px) {
   .offer-title {
     margin-top: 50px;
   }
@@ -480,6 +475,10 @@ h3.name {
   text-align: center;
 }
 
+.table th {
+  font-weight: 600;
+}
+
 .table td,
 .table th {
   padding: 0 10px;
@@ -531,6 +530,23 @@ h3.name {
   display: none;
 }
 @media (max-width: 576px) {
+  .s1 {
+    background: linear-gradient(
+      45deg,
+      rgba(116, 55, 201, 1) 0%,
+      rgba(46, 160, 223, 1) 35%,
+      rgba(82, 253, 188, 1) 100%
+    );
+  }
+  .s3 .row {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mobile-tables {
+    background-color: white;
+  }
+
   .mobile-tables {
     display: table;
     width: 100%;
@@ -542,10 +558,13 @@ h3.name {
     text-align: center;
     background-color: white;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
   }
 
   .mobile-tables td {
-    padding: 10px;
+    padding: 5px 10px;
   }
 
   .mobile-tables:last-of-type {
@@ -563,7 +582,10 @@ h3.name {
   }
 
   .motorbike {
-    display: none;
+    display: block;
+    position: relative;
+    margin-top: -140px;
+    right: 0;
   }
 
   .dirt {
@@ -572,10 +594,6 @@ h3.name {
   }
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
 /*  */
 /*  */
 
@@ -602,12 +620,12 @@ h3.name {
 
 @media (max-width: 768px) {
   .contact-box {
-    width: 100%;
-    height: 40%;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(230, 230, 230, 0.6);
+    padding: 10px;
   }
 }
 
@@ -751,18 +769,22 @@ footer {
   .menu-wrapper {
     overflow-x: hidden;
     position: absolute;
-    height: 50%;
+    height: 70%;
   }
 
   .hamburger {
     display: inline-block;
   }
 
+  .menu-wrapper {
+    height: 100%;
+  }
+
   #menu {
     position: absolute;
     margin-top: 70px;
-    /* height: 100%; */
     width: 100%;
+    height: 90%;
     top: 0;
     right: 0;
     transform: translateX(100%);
@@ -770,6 +792,7 @@ footer {
     background-color: transparent;
     z-index: 9999999;
     padding-right: 0;
+    opacity: 0.9;
   }
 
   .navigation--active {
@@ -792,20 +815,187 @@ footer {
     text-align: center;
     margin: 0px auto;
     border-bottom: 1px solid white;
-    background-color: gray;
+    background-color: black;
+    height: 24%;
+    z-index: 9999;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #menu li a {
     color: white;
+    font-size: 26px;
   }
 
   #menu li.active a {
     color: white;
+    font-weight: bold;
   }
 }
 /* HAMBURGER AND SIDE BAR FOR NAV */
 @media (max-width: 768px) {
   #fp-nav {
     display: none;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1199px) {
+  .r1-wrapper img {
+    max-width: 650px;
+  }
+
+  .home-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .offer-img {
+    max-width: 100px;
+  }
+
+  .contact-btn {
+    margin-left: 20px;
+  }
+
+  .dirt {
+    height: 400px;
+    width: 400px;
+    top: 15%;
+    left: 0;
+  }
+
+  .motorbike {
+    right: -2%;
+  }
+
+  .last {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .s1-wrapper .row {
+    display: block;
+  }
+
+  .r1-wrapper {
+    width: 100%;
+  }
+
+  .r1-wrapper img {
+    margin-top: 50px;
+    position: relative;
+    left: 20%;
+    max-width: 600px;
+  }
+
+  .content {
+    position: relative;
+    max-width: 100% !important;
+  }
+
+  .content h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .content h1 span {
+    display: inline-block;
+  }
+
+  .content .text p {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto;
+  }
+
+  .start-bar {
+    margin: 30px auto;
+  }
+
+  .prices-btn {
+    margin-left: 80px;
+  }
+
+  /* offer section */
+
+  .offer-img {
+    max-width: 500px;
+  }
+
+  .option-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* prices section */
+
+  .dirt {
+    height: 400px;
+    width: 400px;
+    top: 0;
+    left: 0;
+  }
+
+  .motorbike {
+    position: relative;
+    margin-top: -100px;
+    right: 0;
+  }
+
+  .last {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 400px) {
+  .r1-wrapper {
+    margin-top: 0;
+  }
+  .content {
+    margin: 50px 0;
+  }
+
+  .content .text {
+    padding-top: 180px;
+  }
+
+  .content h1 {
+    top: -45%;
+  }
+
+  .start-bar {
+    top: -25%;
+  }
+
+  /* oferta */
+
+  .spec span {
+    font-size: 20px;
+  }
+
+  /* cennik */
+
+  .table2 .last {
+    color: black;
+  }
+
+  .dirt {
+    height: 400px;
+    width: 400px;
+    top: 0;
+    left: 0;
+  }
+
+  .motorbike {
+    position: relative;
+    margin-top: -100px;
+    right: 0;
   }
 }

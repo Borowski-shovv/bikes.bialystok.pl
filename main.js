@@ -28,16 +28,11 @@ var myFullpage = new fullpage('#fullpage', {
       $('#menu-wrapper').removeClass('attached');
     }
 
-    // const section = destination.item;
-    // const title = section.querySelector('h1');
-    // const tl = new TimelineMax({ delay: 0.5 });
-    // const description = document.querySelector('.text');
-    // const motoImg = document.querySelector('.r1-wrapper');
-    // tl.fromTo(
-    //   [title, description, motoImg],
-    //   0.5,
-    //   { y: '50', opacity: 0 },
-    //   { y: 0, opacity: 1 }
-    // );
+    const section = destination.item;
+    const title = section.querySelector('h1');
+    const tl = new TimelineMax({ delay: 0.5 });
+    const description = document.querySelector('.text');
+    const motoImg = document.querySelector('.r1-wrapper');
+    tl.to([title, description, motoImg], { y: 0, opacity: 1 });
   },
 });
